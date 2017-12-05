@@ -1044,7 +1044,7 @@
 <span class='line'>1037</span>  *  should go in the URL.
 <span class='line'>1038</span>  *
 <span class='line'>1039</span>  * For example, the OpenStreetMap tiles are:
-<span class='line'>1040</span>  *  m.addTileLayer("http://tile.openstreetmap.org/{Z}/{X}/{Y}.png", 1.0, "OSM", 1, 19, true);
+<span class='line'>1040</span>  *  m.addTileLayer("https://tile.openstreetmap.org/{Z}/{X}/{Y}.png", 1.0, "OSM", 1, 19, true);
 <span class='line'>1041</span>  *
 <span class='line'>1042</span>  * @param {tile_url} template url of the tiles.
 <span class='line'>1043</span>  * @param {opacity} opacity of the tile layer - 0 is transparent, 1 is opaque. (default=0.6)
@@ -1315,7 +1315,7 @@
 <span class='line'>1308</span>  * @type double
 <span class='line'>1309</span>  */</span><span class="WHIT">
 <span class='line'>1310</span> </span><span class="NAME">LatLonPoint.prototype.distance</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="KEYW">function</span><span class="PUNC">(</span><span class="NAME">otherPoint</span><span class="PUNC">)</span><span class="WHIT"> </span><span class="PUNC">{</span><span class="WHIT">
-<span class='line'>1311</span> </span><span class="WHIT">	</span><span class="COMM">// Uses Haversine formula from http://www.movable-type.co.uk</span><span class="WHIT">
+<span class='line'>1311</span> </span><span class="WHIT">	</span><span class="COMM">// Uses Haversine formula from https://www.movable-type.co.uk</span><span class="WHIT">
 <span class='line'>1312</span> </span><span class="WHIT">	</span><span class="KEYW">var</span><span class="WHIT"> </span><span class="NAME">rads</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="NAME">Math.PI</span><span class="WHIT"> </span><span class="PUNC">/</span><span class="WHIT"> </span><span class="NUMB">180</span><span class="PUNC">;</span><span class="WHIT">
 <span class='line'>1313</span> </span><span class="WHIT">	</span><span class="KEYW">var</span><span class="WHIT"> </span><span class="NAME">diffLat</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="PUNC">(</span><span class="NAME">this.lat</span><span class="PUNC">-</span><span class="NAME">otherPoint.lat</span><span class="PUNC">)</span><span class="WHIT"> </span><span class="PUNC">*</span><span class="WHIT"> </span><span class="NAME">rads</span><span class="PUNC">;</span><span class="WHIT">
 <span class='line'>1314</span> </span><span class="WHIT">	</span><span class="KEYW">var</span><span class="WHIT"> </span><span class="NAME">diffLon</span><span class="WHIT"> </span><span class="PUNC">=</span><span class="WHIT"> </span><span class="PUNC">(</span><span class="NAME">this.lon</span><span class="PUNC">-</span><span class="NAME">otherPoint.lon</span><span class="PUNC">)</span><span class="WHIT"> </span><span class="PUNC">*</span><span class="WHIT"> </span><span class="NAME">rads</span><span class="PUNC">;</span><span class="WHIT"> </span><span class="WHIT">

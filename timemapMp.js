@@ -25,7 +25,6 @@ $(function() {
   function getRoutes(routeIds) {
     let idString = routeIds.join(',')
     let url = `https://www.mountainproject.com/data/get-routes?routeIds=${idString}&key=${key}`
-    console.log(url)
 
     return fetch(url, { method: 'GET' })
     .then(resp => {
