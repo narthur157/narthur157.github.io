@@ -116,6 +116,8 @@ $(function() {
     })
   }
 
-  getDecoratedTicks('narthur157@gmail.com').then(ticks => displayTimeline(ticks))
-    
+  $('#emailForm').submit(event => {
+    getDecoratedTicks($('#email')[0].value).then(ticks => displayTimeline(ticks))
+    return false
+  })    
 })

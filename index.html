@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <title>Basic Example</title><script src="http://openlayers.org/api/OpenLayers.js"></script>
+    <title>Basic Example</title><script src="https://openlayers.org/api/OpenLayers.js"></script>
     <script type="text/javascript" src="lib/jquery-1.6.2.min.js"></script>
     <script type="text/javascript" src="lib/mxn/mxn.js?(openlayers)"></script>
     <script type="text/javascript" src="lib/timeline-1.2.js"></script>
@@ -22,6 +22,10 @@
   </head>
 
   <body>
+    <form id="emailForm">
+      <input id="email" type="text" placeholder="Mountain project email" />
+      <input type="submit" value="Show me my climbs" />
+    </form>
     <div id="timemap">
         <div id="timelinecontainer">
           <div id="timeline"></div>
